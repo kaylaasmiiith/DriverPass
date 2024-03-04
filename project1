@@ -1,0 +1,20 @@
+ The data flow diagram shows Hamps Crafts’ current purchase and supply process for their brick and mortar store. The process begins with a customer placing their order which will then be processed through the secure local merchant account. Transaction funds are collected then transferred to the company’s primary business account within 2 business days. Inventory specialists and the order fulfillment team use a local database to input information related to the order status and tracking of shipments.
+
+Data sources involved:
+ - Customer orders.
+-	Secure Local Merchant Account
+-	Inventory System
+-	Local Database
+Additional Processes Necessary for Online Storefront Integration:
+-	Online ordering system: Implement a system that allows customers to view products, place orders and make payments online.
+-	Payment gateway: Ensure secure online payment processing, transferring funds to Hamp Crafs’
+-	Automated Communication System: Set up automated notifications to inform customers about order confirmations, shipping details and potential delays.
+-	Administrative backend: Develop a backend system system for customer support, updating customer information, and maintaining the website.
+Additional Sources Needed:
+-	Online order database: An online repository information about products available for sale.
+-	Customer Order Information: A database to store customer order details, facilitating order tracking and customer support.
+Additional Databases Needed:
+-	Online order database: To store data related to online orders, including order details, payment info, and order status 
+-	Customer Order Information: To manage customer profiles, order history and support interactions
+Integration Approach:
+I would recommend incorporating elements of the online storefront into the current process model. This approach leverages existing processes and databases, ensuring a seamless integration of the online storefront with the brick and mortar operations. By extending the current system, it reduces complexity and allows for efficient management of both online and in store sales. The integration should be designed to provide a unified view of inventory and order processing, streamlining operations and enhancing customer experience.
