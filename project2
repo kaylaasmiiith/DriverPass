@@ -1,0 +1,131 @@
+This template lays out all the different sections that you need to complete for Project Two. Each section has guidance to prompt your thinking. You will need to continually reference the interview transcript as you work to make sure that you are addressing your client’s needs. There is no required length for the final document. Instead the goal is to complete each section based on what your client’s needs are. Remove this note when you are finished, and replace all bracketed text with the relevant information.
+
+UML Diagrams
+
+UML Use Case Diagram
+ 
+
+
+UML Activity Diagrams
++-----------------------+
+| Schedule Driving      |
+|      Lesson           |
++-----------------------+
+        |
+        v
+   [Access Scheduling]
+        |
+        v
+   [Input Preferences]
+        |
+        v
+   [Confirm Selections]
+        |
+        v
+   [Process Request]
+        |
+        v
+  [Generate Confirmation]
+--------------------------------------------------------------------------------------------
+
++-----------------------+
+| Access Training       |
+|     Materials         |
++-----------------------+
+        |
+        v
+  [Login to System]
+        |
+        v
+    [Select Course]
+        |
+        v
+   [View Materials]
+        |
+        v
+   [Take Practice Tests]
+
+
+UML Sequence Diagram
+1.	The Customer initiates the scheduling process by accessing the scheduling interface.
+2.	The System verifies the Customer's credentials and presents the scheduling options.
+3.	The Customer selects their preferred date, time, and location for the driving lesson.
+4.	The System processes the Customer's selection and checks for availability.
+5.	If the requested time slot is available, the System confirms the appointment and sends a confirmation to the Customer.
+6.	If the requested time slot is not available, the System notifies the Customer and prompts them to choose an alternative time.
+7.	The Customer confirms the appointment, and the System updates the appointment schedule accordingly.
+8.	Finally, the System sends a notification to the administrative staff regarding the new appointment.
+
+UML Class Diagram
++-------------------+
+|      Driver       |
++-------------------+
+| - driverID: int   |
+| - name: string    |
+| - licenseNumber: string |
+| - contactNumber: string |
++-------------------+
+            |
+            | 
+     +---------------+
+     |    Customer   |
+     +---------------+
+     | - customerID: int |
+     | - name: string    |
+     | - contactNumber: string |
+     +---------------+
+            |
+            | 
+     +-------------------------+
+     |    Appointment          |
+     +-------------------------+
+     | - appointmentID: int    |
+     | - date: date            |
+     | - time: time            |
+     | - location: string      |
+     | - status: string        |
+     +-------------------------+
+            |
+            | 
+     +-------------------------+
+     |    TrainingMaterials    |
+     +-------------------------+
+     | - materialID: int       |
+     | - title: string         |
+     | - content: string       |
+     +-------------------------+
+            |
+            | 
+     +-------------------------+
+     |    User                 |
+     +-------------------------+
+     | - userID: int           |
+     | - username: string      |
+     | - password: string      |
+     | - role: string          |
+     +-------------------------+
+
+
+Technical Requirements
+1.	Hardware Requirements:
+•	Servers: The system requires servers to host the application and database. These servers should have sufficient processing power, memory, and storage to handle user requests and store data securely.
+•	Client Devices: Customers and administrative staff will access the system using various devices such as computers, laptops, tablets, or smartphones. The system should be compatible with different hardware configurations and screen sizes.
+2.	Software Requirements:
+•	Operating System: The servers should run on a reliable operating system such as Linux or Windows Server.
+•	Web Server: A web server, such as Apache or Nginx, is needed to host the web application and serve web pages to users.
+•	Database Management System (DBMS): A DBMS like MySQL, PostgreSQL, or MongoDB is required to store and manage the system's data effectively.
+•	Development Framework: The system may be built using web development frameworks such as Django (Python) or Spring Boot (Java).
+•	Programming Languages: Knowledge of programming languages such as Python (for Django) or Java (for Spring Boot) is necessary for system development.
+3.	Tools:
+•	Integrated Development Environment (IDE): Developers will use IDEs like PyCharm or IntelliJ IDEA (for Python) or IntelliJ IDEA or Eclipse (for Java) to write and debug code efficiently.
+•	Version Control System (VCS): A VCS like Git will be used to manage source code changes and collaborate with team members.
+•	Design Tools: Tools like Lucidchart or Microsoft Visio can be used to create and maintain diagrams such as use case diagrams, activity diagrams, and class diagrams.
+4.	Infrastructure Requirements:
+•	Internet Connectivity: The system requires a stable internet connection to ensure continuous access for users and facilitate real-time communication between the client and server components.
+•	Cloud Infrastructure: Cloud services like Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP) can provide scalable infrastructure resources, including servers, storage, and networking, to host the system.
+•	Security Infrastructure: Implementation of security measures such as firewalls, encryption, intrusion detection systems, and regular security audits is essential to protect the system from cyber threats and unauthorized access.
+5.	Integration Requirements:
+•	Integration with Payment Gateway: The system must integrate with a secure payment gateway to facilitate online payments for driving lessons and other services.
+•	Integration with DMV Systems: Integration with DMV systems may be required to access up-to-date information on driving regulations, policies, and sample questions for training materials.
+•	Integration with Communication Tools: Integration with communication tools such as email or SMS for sending appointment confirmations, reminders, and notifications to customers and administrative staff.
+
